@@ -11,10 +11,10 @@ function setup() {
 function draw() {
   noStroke();
 
-  // Loop across the canvas to place buildings
+ 
   for (let x = 0; x < width; x += buildingWidth) {
 
-    // Random height for each building
+    // Randomised height
     let h = random(50, height);
 
     // Colour determined by height
@@ -36,7 +36,7 @@ function draw() {
 
     fill(hue, saturation, brightness);
 
-    // Draw building from bottom of canvas
+    // canvas bottom
     rect(x, height - h, buildingWidth, h);
   }
 }
